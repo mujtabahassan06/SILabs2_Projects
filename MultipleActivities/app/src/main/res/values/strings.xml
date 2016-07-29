@@ -5,4 +5,8 @@
     <string name="title_activity_2">Activity2</string>
     <string name="title_activity_3">Activity3</string>
     <string name="title_activity_4">Activity4</string>
+
+    <string name="title_activity_image_viewer">ImageViewerActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
