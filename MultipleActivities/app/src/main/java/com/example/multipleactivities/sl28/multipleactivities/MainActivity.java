@@ -15,54 +15,54 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button1 , button2 , button3 , button4;
+    Button takeAPic , button2 , button3 , button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button1 = (Button) findViewById(R.id.button1);
+        takeAPic = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        takeAPic.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start CameraActivity.class
-                Intent myIntent = new Intent(MainActivity.this,ImageViewerActivity.class);
+                Intent myIntent = new Intent(MainActivity.this,ImageViewActivity.class);
                 startActivity(myIntent);
             }
         });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent myIntent = new Intent(MainActivity.this,
-                        Activity2.class);
-                startActivity(myIntent);
-            }
-        });
-        button3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent myIntent = new Intent(MainActivity.this,
-                        Activity3.class);
-                startActivity(myIntent);
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent myIntent = new Intent(MainActivity.this,
-                        Activity4.class);
-                startActivity(myIntent);
-            }
-        });
+//
+//        button2.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View arg0) {
+//
+//                // Start NewActivity.class
+//                Intent myIntent = new Intent(MainActivity.this,
+//                        Activity2.class);
+//                startActivity(myIntent);
+//            }
+//        });
+//        button3.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View arg0) {
+//
+//                // Start NewActivity.class
+//                Intent myIntent = new Intent(MainActivity.this,
+//                        Activity3.class);
+//                startActivity(myIntent);
+//            }
+//        });
+//
+//        button4.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View arg0) {
+//
+//                // Start NewActivity.class
+//                Intent myIntent = new Intent(MainActivity.this,
+//                        Activity4.class);
+//                startActivity(myIntent);
+//            }
+//        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
